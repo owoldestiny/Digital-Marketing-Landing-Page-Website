@@ -1,3 +1,300 @@
 /* === CSS === */
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 3.5em;
+    line-height: 1.1em;
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-weight: 900;
+    font-size: 1.6em;
+    margin-bottom: 0;
+}
+
+section h3 {
+    font-weight: 400;
+}
+
+p {
+    color: #181818;
+    line-height: 25px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: 700;
+    color: #000;
+}
+
+.btn {
+    background: #000;
+    border: 1px solid #000;
+    padding: 10px 35px;
+    border-radius: 0px 50px 50px 50px;
+    color: #fff;
+    outline: none;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+}
+
+section {
+    padding: 50px 0;
+}
+
+
+/* HEADER */
+
+header {
+    height: 650px;
+    padding: 15px 0;
+    margin-bottom: 30px;
+}
+
+#hero .left {
+    width: 500px;
+}
+
+#hero .right {
+    position: relative;
+}
+
+#hero .right img.hero {
+    width: 480px;
+    margin-top: -46px;
+}
+
+#hero .right .skills {
+    width: 200px;
+    position: absolute;
+    top: 200px;
+    left: -100px;
+}
+
+#hero .right .projectDone {
+    width: 200px;
+    position: absolute;
+    bottom: -30px;
+    right: -60px;
+}
+
+
+/* SECTION1 */
+
+.section1 .left img {
+    width: 500px;
+}
+
+.section1 .right {
+    width: 390px;
+}
+
+
+/* SECTION2 */
+
+.section2 .left {
+    width: 340px;
+}
+
+.section2 .left h2 {
+    width: 80%;
+}
+
+.section2 .right img {
+    width: 500px;
+}
+
+
+/* SECTION3 */
+
+.section3 .left {
+    background: #cbced5;
+    background: linear-gradient(10deg, #F6FAFD, #fbfcfe);
+    background: -webkit-linear-gradient(10deg, #F6FAFD, #fbfcfe);
+    padding: 90px 75px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.section3 .left img {
+    width: 350px;
+}
+
+.section3 .right {
+    width: 350px;
+}
+
+.section3 .right h2 {
+    width: 60%;
+}
+
+
+/* SECTION4 */
+
+.section4 {
+    margin-bottom: 100px;
+}
+
+.section4 .top {
+    margin-bottom: 40px;
+}
+
+.section4 .top h2 {
+    font-size: 2em;
+    margin-top: 0;
+}
+
+.section4 .top .btn {
+    background: transparent;
+    color: #000;
+}
+
+.section4 hr {
+    border-top: 1px solid #bbb;
+}
+
+.section4 .bottom {
+    width: 500px;
+}
+
+
+/* FOOTER */
+
+footer .footerWrap {
+    padding: 50px 0;
+    background: #F6FAFD;
+}
+
+footer .logo {
+    display: block;
+    margin-bottom: 10px;
+}
+
+footer h3 {
+    margin-top: 0;
+}
+
+footer .flex {
+    align-items: flex-start;
+}
+
+footer img {
+    width: 100%;
+    margin-bottom: -5px;
+}
+
+footer .col {
+    width: 200px;
+}
+
+footer ul {
+    padding-left: 0;
+}
+
+footer li {
+    list-style: none;
+    margin-bottom: 10px;
+}
+
+footer li a {
+    color: #000;
+}
+
+@media only screen and (max-width: 1000px) {
+    .container {
+        width: 95%;
+    }
+    #hero .right img.hero {
+        width: 400px;
+        margin-top: -46px;
+    }
+    .section1 .left img,
+    .section2 .right img {
+        width: 400px;
+    }
+    .section3 .left img {
+        width: 300px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .container {
+        width: 80%;
+    }
+    .flex {
+        flex-wrap: wrap;
+    }
+    header {
+        height: 100%;
+    }
+    #hero .left {
+        width: 100%;
+    }
+    #hero .right img.hero {
+        width: 100%;
+        margin-top: 30px;
+    }
+    #hero .right .skills {
+        top: 0;
+        left: 0;
+    }
+    #hero .right .projectDone {
+        right: 0;
+    }
+    .section1 .left img,
+    .section2 .right img,
+    .section3 .left img {
+        width: 100%;
+    }
+    .section2 .flex {
+        flex-direction: column-reverse;
+        align-items: flex-start;
+    }
+    .section3 .left {
+        padding: 50px 35px;
+        -moz-border-radius: 15px;
+        -webkit-border-radius: 15px;
+        border-radius: 15px;
+    }
+    .section4 .bottom {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        width: 90%;
+    }
+    section {
+        padding: 30px 0;
+    }
+}
